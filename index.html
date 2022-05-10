@@ -1,0 +1,286 @@
+<html>
+    <head>
+        <title>
+            EL titulo
+        </title>
+        <!-- y finaliza por -->
+        <meta  name="keywords" content="web, sitios, frontend">
+        <meta  name="Mi página Web">
+        <meta name="description" content="Los meta tags de H"/>
+        <meta name="author" content="Nombre del autor" />
+        <meta name="copyright" content="Propietario del copyright" />
+
+        <!-- etiqueta para indexacion -->
+        <h1>etiquetas semanticas; header nav seccion footer aside</h1>
+        <h1>definir esto para el prototipo</h1>
+        <h1>como decido que tipo de implementacion hago</h1>
+
+
+
+      
+    </head>
+    <body>
+        <a href="pagina2.html">Ir a pagina 2</a>
+        <br>
+        <a href="http://www.google.com">Ir a google</a>
+        <br>
+        <a href="http://www.clarin.com.ar" target="_blank">Periódico Clarin</a>
+        <br>
+        <a href="#ultimoParrafo">Ir al ultimoParrafo</a>
+        <br>
+        <a href="pagina2.html">
+        <img src="Captura.PNG" title="la foto" alt="Foto no encontrada" width="300px"/>
+        </a>
+        <a href="pagina2.html">
+
+        <h1>Ir a página 2</h1>
+        <h1>Iframe googlemaps</h1>
+
+        <h1>Ir a página 2</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54473.96772769585!2d-64.1826816!3d-31.424511999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432989607ea3bdd%3A0xb5cf0eb8823e78b5!2sPlaza%20Jer%C3%B3nimo%20del%20Barco!5e0!3m2!1ses-419!2sar!4v1651792668993!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/gxXxwc-0ODk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h1>Formulario</h1>
+
+        </a>
+        <form action="formulario.php">
+            <p>
+                <label>Usuario:</label>
+                <input type="text" name="usuario" value="pedro" maxlength="6" required>
+            </p>
+            <p>
+                <label>Clave:</label>
+                <input type="password" name="Clave" placeholder="Contraseña" maxlength="5" required>
+            </p>
+            <p>
+                <input type="submit" name="" value="Enviar">
+                <input type="reset" name="" value="borrar">            
+            </p>          
+            
+            <input type="file" name="" value="Enviar">
+
+            <h1>Text area readonly</h1>
+            <p>
+                <label>Mensaje:</label>
+
+                <textarea name="comenterios" id="" cols="60" rows="5" readonly>Aca va el texto</textarea>
+            </p>
+            <p>
+                <input type="checkbox" name="java" >Java
+            </p>
+            <p>
+                <input type="checkbox" name="python">Python
+            </p>
+
+             <!-- orden de tabindex -->
+             <h1>orden de tabindex</h1>
+             <br>
+            <form action="formulario.html" method="post">
+                <input type="text" name="text1" size="5" tabindex="1">
+                <input type="text" name="text2" size="5" tabindex="3">
+                <input type="text" name="text3" size="5" tabindex="2">
+                <br>
+               
+                <input type="submit" value="enviar" tabindex="10">
+              </form>
+
+              <h1>Radio y disabled</h1>
+
+            <p>
+                <input type="radio" name="estudios" value="1" disabled>Sin estudios
+                <input type="radio" name="estudios" value="2">Primaria
+                <input type="radio" name="estudios" value="3">Secundario
+                <input type="radio" name="estudios" value="4">Universitario
+            </p>
+
+
+            <p>
+                <label>Select your Country</label>
+                <select name="Pais">
+                    <option value="">Paraguay</option>
+                    <option value="1">Argentina</option>
+                    <option value="2" selected>Brasil</option>
+                </select>
+            </p>
+            <p>
+                <label>Select your colour</label>
+            </p>
+
+            <form action="">
+                <p>
+                    <select name="colors[]" multiple size="3">
+                        <option value="">Blak</option>
+                        <option value="1">Green</option>
+                        <option value="2" selected>Red</option>
+                    </select>
+                </p>
+
+            </form>
+
+            fielset agrupa componentes del formulario
+
+            <form action="registrardatos.php" method="post">
+                <fieldset>
+                  <legend>Datos personales</legend>
+                  Apellido y nombre:
+                  <input type="text" name="nombre" size="30"><br>
+                  Documento de identidad:
+                  <input type="text" name="dni" size="8"><br>
+                  Fecha de nacimiento:
+                  <input type="text" name="fechanacimiento" size="12"><br>
+                  Dirección:
+                  <input type="text" name="direccionpersona" size="30"><br>
+                </fieldset>
+                <fieldset>
+                  <legend>Datos Laborales</legend>
+                  Nombre de la empresa:
+                  <input type="text" name="nombreempresa" size="30"><br>
+                  Actividad:
+                  <input type="text" name="actividad" size="50"><br>
+                  Dirección:
+                  <input type="text" name="direccionempresa" size="30"><br>
+                </fieldset>
+                <input type="submit" value="Enviar">
+            </form>
+                      
+
+        </form>
+        <h1>
+            buttom tipo submit
+        </h1>
+        <form action="registrardatos.php" method="post">
+            Ingrese su nombre:
+            <input type="text" name="nombre" size="20">
+            <br>
+            <button type="submit">Enviar<img src="enviar.gif" alt="envio"></button>
+            <button type="reset">Borrar<img src="borrar.gif" alt="borrado"></button>
+
+            <input type="hidden" value="10" name="identificador" id="10">
+        </form>
+
+        <h1>
+            lista ordenada y desordenada
+        </h1>
+        
+
+        <ol>
+            <li>Rodriguez Pablo</li>
+            <li>Gonzalez Raul</li>
+            <li>Lopez Hector</li>
+        </ol>
+        <ul>
+            <li>Rodriguez Pablo</li>
+            <li>Gonzalez Raul</li>
+            <li>Lopez Hector</li>
+        </ul>
+
+
+    
+        <dl> Lenguajes
+            <dt>Javascript</dt>
+            <dd>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis at, assumenda</dd>
+            <dt>Python</dt>
+            <dd>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis at, assumenda</dd>
+        </dl>
+
+        <ol>
+            <li>Argentiina
+            <ul>
+                <li>
+                    <a href="misiones.com">Misiones</a>
+                </li>
+                <li>
+                    <a href="cordoba.com">cordoba</a>
+                </li> 
+                <li>
+                    <a href="chaco.com">Chaco</a>
+                </li>             
+            </ul>
+            </li>
+            <li>Paraguay
+                <ul>
+                    <li>
+                        <a href="ciudaddeleste.com">Ciudad del este</a>
+                    </li>
+                    <li>
+                        <a href="itapua.com">itapua</a>
+                    </li> 
+                                
+                </ul>
+                </li>
+        </ol>
+
+        <table border="1">
+            <caption>Poblacion de paises</caption>
+            <tr>
+                <td rowspan="4">filas</td>
+                <td colspan="2">columnas</td>
+            </tr>
+            <tr>
+                <th>pais</th>
+                <th>poblacion</th>
+            </tr>
+            <tr>
+                <td>argentina</td>
+                <td>440000000</td>
+            </tr>
+            <tr>
+                <td>paraguay</td>
+                <td>10000000</td>
+            </tr>
+        </table>
+
+
+
+        <h2>titulo2</h2>
+        <h3>titulo3</h3>
+        <h4>titulo4</h4>
+
+        <p>Hola <strong>mundo </strong>chau <em>mundo </em>bienvenidos </p> 
+        <b>hola</b>
+        <i>hola</i>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas adipisci velit eveniet eos 
+            magnam odit autem aperiam veritatis rerum a. Quibusdam fugit cupiditate, reiciendis consequatur 
+            eaque eveniet enim aliquid numquam.
+        </p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas adipisci velit eveniet eos 
+            magnam odit autem aperiam veritatis rerum a. Quibusdam fugit cupiditate, reiciendis consequatur 
+            eaque eveniet enim aliquid numquam.
+        </p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas adipisci velit eveniet eos 
+            magnam odit autem aperiam veritatis rerum a. Quibusdam fugit cupiditate, reiciendis consequatur 
+            eaque eveniet enim aliquid numquam.
+        </p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas adipisci velit eveniet eos 
+            magnam odit autem aperiam veritatis rerum a. Quibusdam fugit cupiditate, reiciendis consequatur 
+            eaque eveniet enim aliquid numquam.
+        </p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas adipisci velit eveniet eos 
+            magnam odit autem aperiam veritatis rerum a. Quibusdam fugit cupiditate, reiciendis consequatur 
+            eaque eveniet enim aliquid numquam.
+        </p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas adipisci velit eveniet eos 
+            magnam odit autem aperiam veritatis rerum a. Quibusdam fugit cupiditate, reiciendis consequatur 
+            eaque eveniet enim aliquid numquam.
+        </p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas adipisci velit eveniet eos 
+            magnam odit autem aperiam veritatis rerum a. Quibusdam fugit cupiditate, reiciendis consequatur 
+            eaque eveniet enim aliquid numquam.
+        </p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas adipisci velit eveniet eos 
+            magnam odit autem aperiam veritatis rerum a. Quibusdam fugit cupiditate, reiciendis consequatur 
+            eaque eveniet enim aliquid numquam.
+        </p>    
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas adipisci velit eveniet eos 
+            magnam odit autem aperiam veritatis rerum a. Quibusdam fugit cupiditate, reiciendis consequatur 
+            eaque eveniet enim aliquid numquam.
+        </p>
+
+        <p id='ultimoParrafo'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas adipisci velit eveniet eos 
+            magnam odit autem aperiam veritatis rerum a. Quibusdam fugit cupiditate, reiciendis consequatur 
+            eaque eveniet enim aliquid numquam.
+        </p>
+            
+     
+    </body>
+</html>
+
